@@ -1,4 +1,9 @@
-FROM debian:jessie
+FROM phusion/baseimage:0.9.18
+MAINTAINER nmcaullay <nmcaullay@gmail.com>
+ENV DEBIAN_FRONTEND noninteractive
+
+# Set correct environment variables.
+ENV HOME /root
 
 # 1. Create plex user
 # 2. Download and install Plex (non plexpass)
